@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#080C11</color>
+    <color name="colorPrimaryDark">#181818</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="mainColorAppBar">#202020</color>
+    <color name="mainColor">#202020</color>
+    <color name="white">#FFFFFF</color>
+    <color name="horizontalScrollBar">#173497</color>
+    <color name="background">#181818</color>
+</resources>

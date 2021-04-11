@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".SettingsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/mainColorAppBar">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            android:background="?android:selectableItemBackgroundBorderless"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circularstdbook"
+            android:text="Настройки"
+            android:gravity="center_vertical"
+            android:layout_marginStart="38.5dp"
+            android:textColor="@color/white"
+            android:textSize="21sp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/mainColor">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вход не выполнен"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/circularstdbook"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="39dp"
+                android:alpha="0.78"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/mainColor"
+        android:layout_marginTop="5dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/darkTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:switchMinWidth="56dp"
+            android:theme="@style/BrandedSwitch.control"
+            android:text="Тёмная тема"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:fontFamily="@font/circularstdbook"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="41dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:switchMinWidth="56dp"
+            android:theme="@style/BrandedSwitch.control"
+            android:text="Уведомления"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:fontFamily="@font/circularstdbook"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="18dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изменить группу"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/circularstdbook"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="41dp"/>
+    </LinearLayout>
+</LinearLayout>
