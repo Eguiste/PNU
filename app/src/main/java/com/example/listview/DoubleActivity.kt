@@ -35,6 +35,7 @@ class DoubleActivity : AppCompatActivity()
         // Создание ViewPagerAdapter
         val adapter = ViewPagerAdapter(this, supportFragmentManager, titles, countOfTabs)
 
+
         // Инициализация ViewPager и настройка адаптера
         val pager = findViewById<ViewPager>(R.id.slideViewPager)
 

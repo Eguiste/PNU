@@ -1,28 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar"
-    android:layout_height="48dp"
+    android:layout_height="50dp"
     android:layout_width="match_parent"
     android:background="@color/mainColorAppBar"
     android:elevation="2dp"
     android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="31dp"
-        android:layout_height="40dp"
-        android:src="@drawable/logo"
-        android:layout_marginStart="15dp"/>
-    <com.example.listview.structure.SlidingTabLayout
-        android:id="@+id/tabs"
-        android:layout_width="260dp"
-        android:layout_height="match_parent"
-        android:foregroundGravity="center"/>
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/settings"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:src="@drawable/settings"
-        android:scaleType="centerCrop"
-        android:background="?android:selectableItemBackgroundBorderless"
-        android:layout_marginStart="8dp"/>
-</androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/logo" />
+
+        <com.example.listview.structure.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="31dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/settings"
+            android:layout_toEndOf="@+id/logo" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/settings"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/settings" />
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>

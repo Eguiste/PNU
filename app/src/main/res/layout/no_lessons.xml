@@ -18,13 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/ZZZ"
-        android:layout_width="142dp"
-        android:layout_height="143dp"
-        android:src="@drawable/zzz"
-        android:layout_marginTop="37dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/noLessons" />
+<!--    <ImageView-->
+<!--        android:id="@+id/ZZZ"-->
+<!--        android:layout_width="142dp"-->
+<!--        android:layout_height="143dp"-->
+<!--        android:src="@drawable/zzz"-->
+<!--        android:layout_marginTop="37dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/noLessons" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

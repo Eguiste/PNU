@@ -12,6 +12,7 @@ class ViewPagerAdapter (val context: Context, fm: FragmentManager, private var T
 {
     //Этот метод возвращает фрагмент для каждой позиции в View Pager
     override fun getItem(position: Int): Fragment {
+
         val dayList = fillingWeek(context).execute().get()
         return if (position == 0)
         {

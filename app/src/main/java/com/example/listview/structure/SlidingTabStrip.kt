@@ -49,8 +49,8 @@ internal class SlidingTabStrip @JvmOverloads constructor(
         // Толстое цветное подчеркивание ниже текущего выбора
         if (childCount > 0) {
             val selectedTitle = getChildAt(mSelectedPosition)
-            var left = selectedTitle.left + 80
-            var right = selectedTitle.right - 80
+            var left = selectedTitle.left + 160
+            var right = selectedTitle.right - 160
             var color: Int = tabColorizer.getIndicatorColor(mSelectedPosition)
             if (mSelectionOffset > 0f && mSelectedPosition < getChildCount() - 1) {
                 val nextColor: Int = tabColorizer.getIndicatorColor(mSelectedPosition + 1)
@@ -60,8 +60,8 @@ internal class SlidingTabStrip @JvmOverloads constructor(
 
                 // Отрисовка выделения между вкладками
                 val nextTitle = getChildAt(mSelectedPosition + 1)
-                left = (mSelectionOffset * (nextTitle.left + 80) + (1.0f - mSelectionOffset) * left).toInt()
-                right = (mSelectionOffset * (nextTitle.right - 80) + (1.0f - mSelectionOffset) * right).toInt()
+                left = (mSelectionOffset * (nextTitle.left + 160) + (1.0f - mSelectionOffset) * left).toInt()
+                right = (mSelectionOffset * (nextTitle.right - 160) + (1.0f - mSelectionOffset) * right).toInt()
             }
             mSelectedIndicatorPaint.color = color
             canvas.drawRect(
