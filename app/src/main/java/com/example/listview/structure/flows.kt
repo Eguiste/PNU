@@ -139,7 +139,7 @@ class fillingWeek(val context: Context): AsyncTask<Void, Void, Array<Day>>()
             for (lesson in all)
                 if (day == lesson.day)
                     lessonList += lesson
-            dayList += arrayOf(Day(lessList =  lessonList))
+            dayList += arrayOf(Day(lessList = lessonList))
         }
         db.close()
         return dayList

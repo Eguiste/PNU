@@ -91,6 +91,18 @@ class Parse()
                     type = type.split(" ")[1]
                 if (type == "")
                     type = "пр"
+                when (type)
+                {
+                    "пр" -> {
+                        type = "Практика"
+                    }
+                    "лк" -> {
+                        type = "Лекция"
+                    }
+                    "лб" -> {
+                        type = "Лабораторная"
+                    }
+                }
                 //Получение названия пары
                 var dic = lessons.select("table[class=rasp]").eq(i).select("tr").eq(j).select("td[class=time-discipline]")
                 dic.select("span[class=event-subgroup]").remove()

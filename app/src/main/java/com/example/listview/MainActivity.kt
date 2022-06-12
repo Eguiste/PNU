@@ -14,12 +14,15 @@ import android.view.ViewTreeObserver
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listview.data.Day
 import com.example.listview.structure.LessonAdapter
+import com.example.listview.structure.parity
 import com.example.listview.structure.weekAdapter
+import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.column_lesson.view.*
 import kotlinx.android.synthetic.main.column_week.view.*
 import kotlinx.android.synthetic.main.day_of_current_week.*
@@ -91,6 +94,13 @@ class MainActivity(val cntxt: Context, private val dayList: Array<Day>): Fragmen
             val columnView = layoutInflater.inflate(R.layout.no_lessons, null)
             layout.addView(columnView)
         }
+
+        if (parity() == 1)
+            view.indMainLayout.background = resources.getDrawable(R.drawable.zparity_block)
+        else
+            view.indMainLayout.background = resources.getDrawable(R.drawable.nparity_block)
+
+
         weekRecycler.addOnItemTouchListener(weekAdapter.RecyclerItemClickListener(
             cntxt,
             weekRecycler,
@@ -137,7 +147,11 @@ class MainActivity(val cntxt: Context, private val dayList: Array<Day>): Fragmen
                         }
                     }
                     day.show()
+
+
+
                 }
+
 
                 override fun onItemLongClick(view: View?, position: Int) {
 

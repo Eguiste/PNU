@@ -12,8 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SettingsActivity"
-            android:screenOrientation="portrait"/>
         <activity
             android:name=".FullActivity"
             android:theme="@style/AppTheme.NoActionBar"
@@ -21,9 +19,6 @@
         <activity
             android:name=".FacActivity"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".FourthActivity"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".GroupActivity"
             android:screenOrientation="portrait" />

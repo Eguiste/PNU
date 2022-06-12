@@ -58,7 +58,8 @@ class DBHelper(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null,
         onCreate(db)
     }
 
-    val allDay: Array<Lesson>
+    val
+            allDay: Array<Lesson>
     get()
     {
         var lstLessons = emptyArray<Lesson>()

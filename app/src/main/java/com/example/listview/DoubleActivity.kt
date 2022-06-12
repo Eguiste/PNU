@@ -28,8 +28,8 @@ class DoubleActivity : AppCompatActivity()
 
         val settings = toolbar.settings
         settings.setOnClickListener{
-            val intent = Intent(baseContext, SettingsActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(baseContext, SettingsActivity::class.java)
+//            startActivity(intent)
         }
 
         // Создание ViewPagerAdapter
@@ -44,6 +44,7 @@ class DoubleActivity : AppCompatActivity()
         
         // Инициализация SlidingTabLayout
         val tabs = findViewById<SlidingTabLayout>(R.id.tabs)
+
         tabs.setDistributeEvenly(true) // Равномерное расположение вкладок по доступной ширине
 
         // Настройка цвета для индикатора scrollBar в TabView

@@ -148,7 +148,7 @@ class SlidingTabLayout @JvmOverloads constructor(context: Context?, attrs: Attri
             if (i == mViewPager!!.currentItem) {
                 tabView.isSelected = true
             }
-            tabTitleView.setTextColor(resources.getColorStateList(R.color.white))
+            tabTitleView.setTextColor(resources.getColorStateList(R.color.black))
             tabTitleView.textSize = 18f
         }
     }

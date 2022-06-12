@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Расписание</string>
+    <string name="app_name">Расписание ТОГУ</string>
     <string name="week">Текущая неделя</string>
     <string name="today">Сегодня</string>
 </resources>

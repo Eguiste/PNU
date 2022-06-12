@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#8C78FF</color>
-    <color name="colorPrimaryDark">#AB9CFF</color>
+    <color name="colorPrimaryDark">#F5F5F5</color>
     <color name="colorAccent">#D81B60</color>
     <color name="mainColorAppBar">#FFFFFF</color>
-    <color name="mainColor">#8C78FF</color>
+    <color name="mainColor">#F5F5F5</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="backgroundLesson">@color/weeklayout</color>
     <color name="horizontalScrollBar">#173497</color>
     <color name="background">#F5F5F5</color>
+    <color name="text">@color/black</color>
+    <color name="weeklayout">@color/white</color>
+    <color name="noParity">#FCEB77</color>
+    <color name="cParity">#FD7C86</color>
+    <color name="nParity">#438EFF</color>
 </resources>

@@ -23,14 +23,14 @@
             <TextView
                 android:id="@+id/dayOfWeek"
                 android:fontFamily="@font/circularstdblack"
-                android:textSize="24sp"
-                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textColor="@color/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="41dp"/>
+                android:layout_marginStart="22dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 

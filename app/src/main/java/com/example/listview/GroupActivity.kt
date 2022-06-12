@@ -7,6 +7,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.listview.structure.MyAdapter
 import com.example.listview.structure.Parse_group
+import com.example.listview.structure.paw
 import kotlinx.android.synthetic.main.activity_group.*
 
 class GroupActivity : AppCompatActivity() {
@@ -50,11 +51,15 @@ class GroupActivity : AppCompatActivity() {
         )
     }
     fun creategroup(pos_fac: Int, pos_kurs: Int, pos_group: Int){
-        val fourthIntent = Intent(this, FourthActivity::class.java)
-        fourthIntent.putExtra("fac", pos_fac)
-        fourthIntent.putExtra("kurs", pos_kurs)
-        fourthIntent.putExtra("group", pos_group)
-        startActivity(fourthIntent)
+//        val fourthIntent = Intent(this, FourthActivity::class.java)
+//        fourthIntent.putExtra("fac", pos_fac)
+//        fourthIntent.putExtra("kurs", pos_kurs)
+//        fourthIntent.putExtra("group", pos_group)
+//        startActivity(fourthIntent)
+        paw(this, pos_fac, pos_kurs, pos_group).execute().get()
+        val doubleActivity = Intent(this, DoubleActivity::class.java)
+        startActivity(doubleActivity)
+        finish()
     }
 
 
